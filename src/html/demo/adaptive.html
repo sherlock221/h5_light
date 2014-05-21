@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>自适应布局</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+          name="viewport" id="viewport"/>
+    <link rel="stylesheet" href="../bin/module.css" type="text/css"/>
+    <style type="text/css">
+
+
+        .mg-20{
+            margin: 20px 0;
+        }
+        .pd-20{
+            padding: 20px;
+        }
+
+
+    </style>
+    <style type="text/css">
+
+        .parent{
+            display: table;
+        }
+
+        .child{
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+<div >
+    <h1 class="mg-20"> 流体布局: 自身浮动</h1>
+    <div class="clear">
+
+        <div class="fl bg-fuchsia">左侧浮动</div>
+        <div class="fr bg-blue">右侧浮动</div>
+        <div class="text-wrap bg-silver  text-center" >中间显示</div>
+
+    </div>
+
+    <p>关键点: 左栏左浮动，右栏右浮动，主体直接放后面，就实现了自适应。</p>
+</div>
+
+
+
+<div class="">
+    <h1 class="mg-20">  流体布局: table－cell(二栏)自适应</h1>
+    <div>
+        <a href="javascrip:void(0);" class="fl">
+            <img border="0" src="http://image.zhangxinxu.com/image/study/s/s128/mm2.jpg" />
+        </a>
+        <div class="tb-cell">
+            <p><a href="javascript:void(0);">大美女一枚</a> 来自上海</p>
+            <p class="mt5">签名：想找个保鲜盒把你给我的那些感动都装起来。当你让我伤心的时候就拿出来回味一下。</p>
+            <p class="mt5">微博：坐在办公室，只听轰隆隆几声巨响，晴天也能打雷吗？原来街对面的芭莎咖啡厅被炸成了两截。这定点爆破也太失败了，也不清下场，把路过的汽车震得灰头土脸，愣在路中央不知如何是好。其次，房子只炸了一半，另一半屹立不倒，是乍药太水还是房子质量太好？</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    <div class="inline-center">
+        <span class="h-center" style="width: 100px;">
+            <img src="http://p2008.zbjimg.com/task/2009-08/05/121253/s78zlmih.jpg" width="200" height="300"/>
+        </span>
+    </div>
+
+
+<h1 class="mg-20">tab-cell 等高布局</h1>
+
+<ul>
+    <li class="tb-cell pd-20">你一定也有过这种感觉的。当你心事重重，渴望找一个人聊一聊的时候，那个可以聊的人来了，可是你们却并没有聊什么。当然，聊是聊了，可是他聊他的，你也试着开始聊你的，只是到后来，你放弃了……那么，最后的办法就是静下来，啃啮自己的寂寞。或者反过来说，让寂寞来吞噬你。------罗兰《寂寞的感觉》</li>
+    <li class="tb-cell pd-20">作为一个被基阿异捅过两个大血窟窿的人。告诉后来的基友们一句：一命二运三风水，四积阴功五读书</li>
+    <li class="tb-cell pd-20">奔波了一天，收到了无数的生日快乐，享受了电影见面会现场各种形式的祝福和礼物，以及场面宏大的生日快乐歌，感谢＜西风烈＞，感谢支持我的朋友们！现在机场举长寿面祝你们都永远幸福快乐！</li>
+</ul>
+
+
+
+<h1 class="mg-20">tab-cell 连续字符不换行问题</h1>
+
+<ul>
+    <li class="tb-cell pd-20" style="">
+        sbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsb
+    </li>
+    <li class="tb-cell pd-20">作为一个被基阿异捅过两个大血窟窿的人。告诉后来的基友们一句：一命二运三风水，四积阴功五读书</li>
+    <li class="tb-cell pd-20">奔波了一天，收到了无数的生日快乐，享受了电影见面会现场各种形式的祝福和礼物，以及场面宏大的生日快乐歌，感谢＜西风烈＞，感谢支持我的朋友们！现在机场举长寿面祝你们都永远幸福快乐！</li>
+</ul>
+
+
+<div class="v-align" style="width: 300px; height: 600px; background: darkgoldenrod;">
+    <img  class="vm" src="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" />
+</div>
+
+
+
+
+</body>
+</html>

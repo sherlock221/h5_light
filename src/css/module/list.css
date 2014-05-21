@@ -1,0 +1,41 @@
+/** 注意ie8+ **/
+
+
+.list-inline-nopd{
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-inline-nopd>li{
+    display: inline-block;
+}
+
+
+/*
+ * 列表水平排列
+ * 通过设置display: inline-block;并添加少量的内补，将所有元素放置于同一列。
+ */
+.list-inline{
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-inline>li:first-child {
+    padding-left: 0;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+/*
+ * 无样式列表
+ * 移除了默认的list-style样式和左侧外边距的一组元素
+ */
+.list-unstyled{
+    list-style: none;
+    padding-left:0;
+}

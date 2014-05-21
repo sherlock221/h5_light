@@ -1,0 +1,38 @@
+/*
+ * 文本css类
+ * sherlock
+ * 2014/3/25 周二
+ */
+
+/* 显示一行  溢出显示... */
+.text-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 显示一行 截断显示 */
+.text-clip {
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 强制换行显示 */
+/*  word-wrap 对于长英文无解*/
+.text-wrap {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* 文字居中*/
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+

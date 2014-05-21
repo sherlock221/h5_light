@@ -1,0 +1,117 @@
+/*
+ * 重置css类
+ * sherlock
+ * 2014/3/25 周二
+ */
+
+
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+/* 禁止长按链接与图片弹出菜单 */
+a, img {
+    -webkit-touch-callout: none;
+}
+
+a:hover {
+    color: #1c5aa2;
+    text-decoration: none
+}
+
+
+html, body {
+    -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+}
+
+
+body,nav,dl,dt,dd,p,h1,h2,h3,h4,ul,ol,li,input,button,textarea,footer {
+    margin: 0;
+    padding: 0
+}
+
+
+/* rem字体设置 */
+
+html{
+    font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%**/
+}
+body {
+    font-size: 1.4rem; /*1.4 × 10px = 14px */
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #333;
+    background: #f8f8f8;
+    -webkit-text-size-adjust: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%
+}
+
+
+/* 列表 */
+
+ul,ol {
+    list-style: none;
+}
+
+
+/* 图片 */
+img {
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+
+
+/** 表单区域 **/
+button,input,select,textarea {
+    font-size: 100%;
+    vertical-align: middle;
+    outline: 0
+}
+
+textarea {
+    resize: none
+}
+
+button,input[type="button"],input[type="reset"],input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button
+}
+
+input:focus:-moz-placeholder,input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+header,footer,article,section,nav,menu,hgroup {
+    display: block;
+    clear: both;
+}
+
+
+
+

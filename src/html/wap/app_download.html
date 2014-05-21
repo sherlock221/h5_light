@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Make the status bar black with white text. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- IOS页面不识别电话号码 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- IOS页面不识别邮箱 -->
+    <meta name="format-detection" content="email=no"/>
+
+    <!-- 设置viewport 保持宽度1:1比例 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+
+    <!-- 编码格式 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- 作者姓名 -->
+    <meta name="Author" content="sherlock"/>
+
+    <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=UTF-8"/>
+
+    <title>校园云</title>
+
+    <link href="module.min.css" rel="stylesheet"/>
+
+    <style type="text/css">
+
+        body{
+            background: #97d053;
+        }
+
+        button {
+            -webkit-appearance: none;
+            border: 0 none;
+            border-radius: 0;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .btn {
+            text-align: center;
+            width: 210px;
+            height: 65px;
+            border-radius: 4px;
+            color: #ffffff;
+            background-color: #539800;
+        }
+
+        .logo-main {
+            margin: 43px 0px 50px 0px;
+        }
+
+        .pt45{
+            padding-top: 45px;
+        }
+
+
+    </style>
+</head>
+<body class="pd10">
+
+<header class="tc">
+    <div class="logo-main">
+        <div class="inline-block mb15">
+            <div>
+                <img src="img/logo@640.png"   class="response-img" style="width: 80%;"/>
+            </div>
+        </div>
+    </div>
+
+    <button   class="mb10 btn" onclick="window.location.href='http://t.xy189.cn/twoDimenSign.action'">
+        <!--<i class="icon-ip mr15 inline-block"></i>-->
+        <img src="img/iphone@640.png" class="response-img mr15"/>
+        <span class="f22 inline-block">立即下载</span>
+    </button>
+
+            <img src="img/cloud@960.png"  class="tile-img"/>
+
+
+</header>
+
+<section class="tc">
+
+
+    <div>
+        <ul>
+            <li>
+                <!--<h3>学习</h3>-->
+
+                <!--<p>学习好帮手、提供成绩查询、课表查询、图书查询</p>-->
+                <div class="bg-white pt45" >
+                    <img src="img/01@640.jpg"   class="response-img" style="background-color:#97d053 "/>
+                </div>
+            </li>
+
+            <li>
+                <!--<h3>发现</h3>-->
+                <!--<p>校园云内专属社交圈子、随时随地发现校园新鲜事、最帅师兄、最美师妹</p>-->
+                <div class="bg-white pt45">
+                    <img src="img/02@640.jpg"   class="response-img" style="background-color:#97d053 "/>
+                </div>
+            </li>
+
+            <li>
+                <!--<h3>生活</h3>-->
+
+                <!--<p>最贴心的服务、尽享校园外卖、跳蚤信息、周边商家、最热游戏、快递查询</p>-->
+                <div class="bg-white pt45">
+                    <img src="img/03@640.jpg"   class="response-img" style="background-color:#97d053 "/>
+                </div>
+                <!--<img src="xxx" onerror="xxx" width="210" height="306"/>-->
+            </li>
+        </ul>
+
+
+    </div>
+
+</section>
+
+<footer class="tc bg-white">
+
+    <button   style="margin-top: 43px;" class="mt30 btn" onclick="window.location.href='http://t.xy189.cn/twoDimenSign.action'">
+        <!--<i class="icon-ip mr15 inline-block"></i>-->
+        <img src="img/iphone@640.png" class="response-img mr15"/>
+        <span class="f22 inline-block" id="downloadDown">立即下载</span>
+    </button>
+
+    <p class="f12 mt35" style="padding-bottom: 43px;">
+        Cina Telecom All Rights Reserved <span id="fullYear"></span>
+    </p>
+
+</footer>
+
+<script type="text/javascript">
+    var isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i) ? true : false;
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+        }
+    };
+
+
+    var downloadDownDom,
+            text,
+            yearDom;
+
+    downloadDownDom = document.getElementById("downloadDown");
+    text = "";
+    yearDom = document.getElementById("fullYear");
+
+
+    if (isMobile.iOS())
+        text = "iPhone下载";
+    else if (isMobile.Android())
+        text = "Android下载";
+    else
+        text = "未知设备";
+
+    downloadDownDom.innerHTML = text;
+    yearDom.innerHTML = new Date().getFullYear();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Make the status bar black with white text. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- 主屏webapp默认标题 -->
+    <meta name="apple-mobile-web-app-title" content="WebApp">
+
+    <!-- IOS页面不识别电话号码 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- IOS页面不识别邮箱 -->
+    <meta name="format-detection" content="email=no"/>
+
+    <!-- 设置viewport 保持宽度1:1比例 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+
+    <!-- 编码格式 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- 作者姓名 -->
+    <meta name="Author" content="sherlock"/>
+
+
+
+    <title>appearance radio and checkbox</title>
+
+
+    <link href="../../../bin/module_noreset.min.css" rel="stylesheet"/>
+    
+    <style type="text/css">
+            a, img {
+                -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+            }
+            html, body {
+                -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+                user-select: none;
+            }
+
+            input[type='radio'],input[type='checkbox']{
+                -webkit-appearance : none;
+                border : 0 none;
+                border-radius: 0;
+                outline: none;
+                background-color:transparent;
+
+            }
+            input[type='radio'],input[type='checkbox']:checked{
+
+            }
+        
+            .radio_checkbox_img{
+                background-image: url("../../../src/img/radio_checkbox.png");
+            }
+
+
+            .radio{
+                width: 27px;
+                height: 27px;
+                background-position:  -27px 0;
+
+            }
+
+            .radio:checked{
+                background-position:  -27px -27px;
+                background-color:transparent;
+
+            }
+
+
+            .checkbox{
+                width: 27px;
+                height: 27px;
+                background-position: 0 0;
+            }
+
+            .checkbox:checked{
+                background-position: 0 -27px;
+                background-color:transparent;
+
+            }
+
+
+            ul li{
+                margin: 10px 0;
+                line-height: 40px;
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+        <h1 class="tc mt30">移动开发每日一篇 (2014/3/30)</h1>
+        <p  class="tc mb30">sherlock 18:30</p>
+        <p class="tl">-webkit-appearance 会改变元素默认风格,利用这个特性 可制作自定义皮肤的 单多选按钮</p>
+
+
+        <h1>Demo</h1>
+
+        <input type="radio"  class="radio_checkbox_img radio" name="one" checked/>
+        <input type="radio"  class="radio_checkbox_img radio" name="one"/>
+
+
+        <input type="checkbox"    class="radio_checkbox_img checkbox" name="ck" checked/>
+        <input type="checkbox"  class="radio_checkbox_img checkbox" name="ck"/>
+        <input type="checkbox"  class="radio_checkbox_img checkbox" name="ck"/>
+        <input type="checkbox"  class="radio_checkbox_img checkbox" name="ck"/>
+
+
+        <h1>快速制作</h1>
+
+        <ul style="list-style: decimal">
+
+        <li>
+           准备好单选多选按钮图片
+            <img src="../../../src/img/radio_checkbox.png"/>
+        </li>
+            <li>
+                清除checkbox 以及 radio 的默认样式
+                <br/>
+                input[type='radio'],input[type='checkbox']<br/>{ <br/>-webkit-appearance : none; <br/>appearance : none;<br/>outline: none;<br/>    border : 0 none;<br/>
+                border-radius: 0;<br/>  background-color:transparent;<br/>}<br/>
+            </li>
+            <li>
+                自定义checkbox,radio样式
+                <br/>
+                .radio_checkbox_img<br/>{<br/>
+                    background-image: url("img/radio_checkbox.png");
+                <br/>} <br/>
+
+
+                .radio<br/>{<br/>
+                    width: 27px;
+                    height: 27px;
+                    background-position:  -27px 0;
+
+                <br/>} <br/>
+
+                .radio:checked<br/>{<br/>
+                    background-position:  -27px -27px;
+                <br/>} <br/>
+
+
+                .checkbox<br/>{
+                    width: 27px;
+                    height: 27px;
+                    background-position: 0 0;
+                <br/>} <br/>
+
+                .checkbox:checked<br/>{<br/>
+                    background-position: 0 -27px;
+                <br/> } <br/>
+            </li>
+
+
+            <li>
+                html代码
+                <br/>
+                &lt;input type="radio"  class="radio_checkbox_img radio" name="one" checked/&gt; <br/>
+                &lt;input type="radio"  class="radio_checkbox_img radio" name="one" checked/&gt; <br/>
+                &lt;input type="checkbox"  class="radio_checkbox_img checkbox" name="ck" checked/&gt; <br/>
+                &lt;input type="checkbox"  class="radio_checkbox_img checkbox" name="ck" /&gt; <br/>
+            </li>
+        </ul>
+
+
+</body>
+</html>

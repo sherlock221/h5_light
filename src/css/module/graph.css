@@ -1,0 +1,205 @@
+/*
+ * 图形
+ * sherlock
+ * 2014/3/25 周二
+ */
+
+
+/** 三角形 **/
+.triangle {
+    display: inline-block;
+    width: 8px; /** 三角形边长度 **/
+    height: 8px; /** 三角形边长度 **/
+
+    border-top-color: red; /** 三角形颜色 **/
+    border-right-color: red; /** 三角形颜色 **/
+
+    border-top-width: 3px; /** 设置三角形粗细 **/
+    border-right-width: 3px; /** 设置三角形粗细 **/
+
+    border-right-style: solid;
+    border-top-style: solid;
+}
+
+.triangle-top {
+    -webkit-transform: rotate(-45deg); /** 三角形度数 **/
+}
+
+.triangle-bottom {
+    -webkit-transform: rotate(-225deg); /** 三角形度数 **/
+}
+
+.triangle-left {
+    -webkit-transform: rotate(-135deg); /** 三角形度数 **/
+}
+
+.triangle-right {
+    -webkit-transform: rotate(-315deg); /** 三角形度数 **/
+}
+
+/** 爆裂形状 begin**/
+
+.burst-12 {
+    background: #3079ed;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.burst-12:before, .burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+}
+
+.burst-12:before {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+
+.burst-12:after {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+
+/** 爆裂形状 end**/
+
+.diamond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: red;
+    position: relative;
+    top: -50px;
+}
+
+.diamond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: red;
+}
+
+/** 气泡窗口 begin **/
+
+.talkbubble {
+    width: 120px;
+    height: 80px;
+    background: #3079ed;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #3079ed;
+    border-bottom: 13px solid transparent;
+}
+
+/** 气泡窗口 end **/
+
+/* 太极  begin */
+.yin-yang {
+    width: 96px;
+    height: 48px;
+    background: #ffffff;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.yin-yang:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #ffffff;
+    border: 18px solid #000000;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+}
+
+.yin-yang:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000000;
+    border: 18px solid #ffffff;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+}
+
+/* 太极  end */
+
+
+
+/* 心 begin*/
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+.heart:before, .heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+   -moz-border-radius : 50 px 50 px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform : rotate(- 45 deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+     -ms-transform-origin : 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+ .heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+     transform : rotate(45 deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin : 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+/* 心 end */

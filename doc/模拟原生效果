@@ -1,0 +1,21 @@
+
+1.IOS 主屏幕上添加图标
+
+iOS允许网站开发者像NativeApp一样在iOS设备的主屏幕为其网站添加一个启动Icon，这个代表着网站的Icon在苹果官方开发者文档里被称为“Web Clip”，它的作用类似于桌面浏览器的书签，用户通过点击Icon能直接快速打开这个url的网站。
+
+<link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-retina.png" />
+
+
+通过 <link> 的 <sizes> 属性可以特别地声明这个图标是为哪种分辨率设备准备的，如果没有指明 <sizes> 属性的大小，则默认值为57×57。
+
+如果所有的 <link> 标签序列中都没有符合官方推荐的最适尺寸的话，那么iOS会从所有比推荐的最适尺寸大的图标中选择尺寸最小的那一个，如果所有的 <link> 标签序列中的图标都比当前推荐的最适尺寸小的话，iOS会从这些图片中自动选择最大的那个来作为启动图标。
+
+特别地，如果整个页面都没有指定任何的 apple-touch-icon 的图标的话，iOS则会自动去网站根目录寻找有 apple-touch-icon 和 apple-touch-icon-precomposed 前缀的图标文件。
+
+
+
+详细使用参考
+http://mobile.51cto.com/web-395063_1.htm
