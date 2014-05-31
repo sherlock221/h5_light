@@ -1,19 +1,80 @@
 /*
- * 位置模拟css类
- * sherlock
- * 2014/3/25 周二
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------定位CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. Flex布局下的定位
+ * 2. 常用水平垂直居中方法
  */
 
-/* 水平垂直居中(webkit) */
-.pos-center-css3 {
+
+/*
+ * Flex布局下定位
+ */
+
+/** flex方向 **/
+.flex-dir-row{
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
+    box-direction : row;
+    -webkit-box-direction: row;
+    -moz-box-direction: row;
+    -ms-box-direction: row;
+}
+
+/** flex方向 **/
+.flex-dir-column{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+    box-direction : column;
+    -webkit-box-direction: column;
+    -moz-box-direction: column;
+    -ms-box-direction: column;
+}
+
+/**水平居中 **/
+.flex-row-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+}
+/** 垂直居中 **/
+.flex-colum-center {
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-align: center;
+    -moz-box-align:  center;
+    -ms-box-align:  center;
+    box-align:  center;
+}
+
+
+
+
+/*
+ * 常用水平垂直居中
+ */
+
+/*  transform水平垂直居中(webkit) */
+.transform-center {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%); /* 50%为自身尺寸的一半 */
 }
 
+
 /* 水平垂直居中(负外边距)*/
-.pos-center-neg-outside {
+.outside-neg-center {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -21,19 +82,6 @@
     margin-top: auto; /** 替换为负高度等一半**/
 }
 
-/*水平垂直居中(设置宽高即可)*/
-.pos-center-auto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: auto; /** 自行设置 **/
-    height: auto; /** 自行设置 **/
-}
-
-/* 单行文字水平居中 设置line-height 与 height 值一样即可 */
 
 /* 块元素水平居中(需要设置宽度,block) */
 /* div等标签 */
@@ -43,14 +91,8 @@
 
 /* 行内元素水平居中 inline/inline-block */
 /* span等标签 */
-.inline-center {
+.tc{
     text-align: center;
-}
-
-/* 表格垂直居中(IE8＋兼容)  */
-.table-v-align {
-    display: table-cell;
-    vertical-align: middle;
 }
 
 /* 大小不定元素垂直居中(外层设置宽 高) */
@@ -64,14 +106,5 @@
     overflow: hidden;
 }
 
-/* 绝对定位隐藏 */
-.abs_out {
-    position: absolute;
-    left: -999em;
-    top: -999em;
-}
 
-.abs_clip {
-    position: absolute;
-    clip: rect(0 0 0 0);
-}
+

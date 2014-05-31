@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- 设置viewport 保持宽度1:1比例 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+    <title>多行截断显示内容(webkit)</title>
+    <link rel="stylesheet" href="../../bin/module.css"/>
+     <style type="text/css">
+
+     </style>
+</head>
+<body>
+
+<h2 class="tc mb30">
+    多行阶段显示
+</h2>
+<p class="tc mb30">sherlock 12:30</p>
+
+<h4 class="mb15">3行内容截断显示...</h4>
+<p class="mt20 mb20 multi-ellipsis multi-3" >
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢的
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+</p>
+
+
+<p class="tc  mt20">感谢观看 by sherlock</p>
+
+<p class="tc ">
+    发现更多html5/前端资讯,请关注我
+    <span class="mt10 block">微信号码 : jablock</span>
+    <img class="mt10" src="../../img/jab-weixin.png" id="wx">
+</p>
+
+
+</body>
+</html>
+<script type="text/javascript" src="../../bin/zepto.service.01.min.js"></script>
+<script type="text/javascript">
+
+    $(" .jd-product").find("a").bind("tap",function(){
+           $(this).addClass("active").siblings().removeClass("active");
+    });
+
+</script>

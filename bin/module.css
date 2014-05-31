@@ -120,6 +120,7 @@
 
 
 
+
 /** ios 滑动菜单 begin**/
 .swipe-menu {
     /** 开启3d加速 **/
@@ -230,229 +231,14 @@
 }
 
 /*
- * 保护色css类
- * sherlock
- * 2014/3/25 周二
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------功能CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. 常用功能
  */
-
-.bg-navy {
-  background-color: #001f3f; }
-
-.bg-blue {
-  background-color: #0074d9; }
-
-.bg-aqua {
-  background-color: #7fdbff; }
-
-.bg-teal {
-  background-color: #39cccc; }
-
-.bg-olive {
-  background-color: #3d9970; }
-
-.bg-green {
-  background-color: #2ecc40; }
-
-.bg-lime {
-  background-color: #01ff70; }
-
-.bg-yellow {
-  background-color: #ffdc00; }
-
-.bg-orange {
-  background-color: #ff851b; }
-
-.bg-red {
-  background-color: #ff4136; }
-
-.bg-fuchsia {
-  background-color: #f012be; }
-
-.bg-purple {
-  background-color: #b10dc9; }
-
-.bg-maroon {
-  background-color: #85144b; }
-
-.bg-white {
-  background-color: white; }
-
-.bg-gray {
-  background-color: #aaaaaa; }
-
-.bg-silver {
-  background-color: #dddddd; }
-
-.bg-black {
-  background-color: #111111; }
-
-/* Colors */
-.navy {
-  color: #001f3f; }
-
-.blue {
-  color: #0074d9; }
-
-.aqua {
-  color: #7fdbff; }
-
-.teal {
-  color: #39cccc; }
-
-.olive {
-  color: #3d9970; }
-
-.green {
-  color: #2ecc40; }
-
-.lime {
-  color: #01ff70; }
-
-.yellow {
-  color: #ffdc00; }
-
-.orange {
-  color: #ff851b; }
-
-.red {
-  color: #ff4136; }
-
-.fuchsia {
-  color: #f012be; }
-
-.purple {
-  color: #b10dc9; }
-
-.maroon {
-  color: #85144b; }
-
-.white {
-  color: white; }
-
-.silver {
-  color: #dddddd; }
-
-.gray {
-  color: #aaaaaa; }
-
-.black {
-  color: #111111; }
-
-/* Prettier Links */
-/*a {*/
-  /*-webkit-transition: color 0.3s ease-in-out;*/
-  /*transition: color 0.3s ease-in-out; }*/
-
-/*a:link {*/
-  /*color: #0074d9; }*/
-
-/*a:visited {*/
-  /*color: #b10dc9; }*/
-
-/*a:hover {*/
-  /*color: #7fdbff; }*/
-
-/*a:active {*/
-  /*color: #ff851b; }*/
-
-/*
- * 常用css
- * sherlock
- * 2014/3/25 周二
- */
-
-/* display */
-.none{display:none;}
-.inline{display:inline;}
-.block{display:block;}
-.inline-block{
-    display:inline-block;
-    vertical-align: middle;
-    *display:inline; letter-spacing:0;
-    *zoom:1;
-}
-
-
-/* font-style */
-.normal{font-weight:normal; font-style:normal;}
-.bold{font-weight:bold;}
-.italic{font-style:italic;}
-
-
-/* text-align */
-.tc{text-align:center;}
-.tr{text-align:right;}
-.tl{text-align:left;}
-.tj{text-align:justify;}
-
-
-/* pre 换行*/
-.pre-warp{
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-/* 浮动 */
-.fl {
-    float: left
-}
-
-.fr {
-    float: right
-}
-
-/* 清除浮动需要在 浮动元素完成的下一个不浮动元素上加*/
-.clear {
-    clear: both;
-}
-
-/* 去除浮动另外一种方法 推荐()*/
-.fix{*zoom:1;}
-.fix:after{display:block; content:"clear"; height:0; clear:both; visibility:hidden;}
-
-
-/* white-space */
-.nowrap{white-space:nowrap;}
-/* word-wrap */
-.bk{word-wrap:break-word;}
-
-/* text-decoration */
-.tdl{text-decoration:underline;}
-.tdn,.tdn:hover,.tdn a:hover,a.tdl:hover{text-decoration:none;}
-
-
-/* vertical-align */
-.vm{vertical-align:middle;}
-.vtb{vertical-align:text-bottom;}
-.vb{vertical-align:bottom;}
-.vt{vertical-align:top;}
-.vn{vertical-align:-2px;}
-
-/* position */
-.rel{position:relative;}
-.abs{position:absolute;}
-
-/* cursor */
-.poi{cursor:pointer;}
-.def{cursor:default;}
-/* overflow */
-.ovh{overflow:hidden;}
-.ova{overflow:auto;}
-/* visibility */
-.vh{visibility:hidden;}
-.vv{visibility:visible;}
-/* zoom */
-.z{*zoom:1;}
-
-
-
-/* 无框文本框文本域 */
-.bd_none{border:0; outline:none;}
-
-
-
-
 
 /** 开启硬件加速(飞起) **/
 .D3{
@@ -472,7 +258,6 @@
     user-select: none;
 
 }
-
 /* tap颜色清空 */
 .ntp{
     /* Prevent elements to be highlighted on tap */
@@ -488,7 +273,6 @@
     text-size-adjust: none;
 }
 
-
 /** 响应图片 **/
 .response-img{
     max-width: 100%;
@@ -496,24 +280,24 @@
     display: block;
 }
 
+/** 全屏图片 **/
 .tile-img{
     width: 100%;
     height: auto;
 }
 
-
-
-
-
-
-
-
-
-
+/** 裁剪 **/
+.abs_clip {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
 /*
- * 图形
- * sherlock
- * 2014/3/25 周二
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------图形CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
  */
 
 
@@ -718,7 +502,7 @@
 /*
  * -----------------------------------------------------------
  * ----------------------2014/3/25 周二------------------------
- * ----------------------流体布局CSS--------------------
+ * ----------------------布局CSS--------------------
  * ------------------------sherlock---------------------------
  * -----------------------------------------------------------
  * 重点说明:
@@ -852,63 +636,83 @@
     -webkit-box-flex: 9;
 }
 
-/** 注意ie8+ **/
-
-
-.list-inline-nopd{
-    list-style: none;
-    padding-left: 0;
-}
-
-.list-inline-nopd>li{
-    display: inline-block;
-}
+/*
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------定位CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. Flex布局下的定位
+ * 2. 常用水平垂直居中方法
+ */
 
 
 /*
- * 列表水平排列
- * 通过设置display: inline-block;并添加少量的内补，将所有元素放置于同一列。
+ * Flex布局下定位
  */
-.list-inline{
-    list-style: none;
-    padding-left: 0;
+
+/** flex方向 **/
+.flex-dir-row{
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
+    box-direction : row;
+    -webkit-box-direction: row;
+    -moz-box-direction: row;
+    -ms-box-direction: row;
 }
 
-.list-inline>li:first-child {
-    padding-left: 0;
+/** flex方向 **/
+.flex-dir-column{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+    box-direction : column;
+    -webkit-box-direction: column;
+    -moz-box-direction: column;
+    -ms-box-direction: column;
 }
 
-.list-inline>li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
+/**水平居中 **/
+.flex-row-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
 }
+/** 垂直居中 **/
+.flex-colum-center {
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-align: center;
+    -moz-box-align:  center;
+    -ms-box-align:  center;
+    box-align:  center;
+}
+
+
 
 
 /*
- * 无样式列表
- * 移除了默认的list-style样式和左侧外边距的一组元素
- */
-.list-unstyled{
-    list-style: none;
-    padding-left:0;
-}
-/*
- * 位置模拟css类
- * sherlock
- * 2014/3/25 周二
+ * 常用水平垂直居中
  */
 
-/* 水平垂直居中(webkit) */
-.pos-center-css3 {
+/*  transform水平垂直居中(webkit) */
+.transform-center {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%); /* 50%为自身尺寸的一半 */
 }
 
+
 /* 水平垂直居中(负外边距)*/
-.pos-center-neg-outside {
+.outside-neg-center {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -916,19 +720,6 @@
     margin-top: auto; /** 替换为负高度等一半**/
 }
 
-/*水平垂直居中(设置宽高即可)*/
-.pos-center-auto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: auto; /** 自行设置 **/
-    height: auto; /** 自行设置 **/
-}
-
-/* 单行文字水平居中 设置line-height 与 height 值一样即可 */
 
 /* 块元素水平居中(需要设置宽度,block) */
 /* div等标签 */
@@ -938,14 +729,8 @@
 
 /* 行内元素水平居中 inline/inline-block */
 /* span等标签 */
-.inline-center {
+.tc{
     text-align: center;
-}
-
-/* 表格垂直居中(IE8＋兼容)  */
-.table-v-align {
-    display: table-cell;
-    vertical-align: middle;
 }
 
 /* 大小不定元素垂直居中(外层设置宽 高) */
@@ -959,17 +744,113 @@
     overflow: hidden;
 }
 
+
+
+
+/*
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------常用属性CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. 元素可见度
+ * 2. 常用水平垂直居中方法
+ */
+
+
+
+
+/*
+ * 元素可见度
+ */
+.none{display:none;}
+.inline{display:inline;}
+.block{display:block;}
+.inline-block{
+    display:inline-block;
+    vertical-align: middle;
+    *display:inline; letter-spacing:0;
+    *zoom:1;
+}
+
 /* 绝对定位隐藏 */
-.abs_out {
+.abs_hidde {
     position: absolute;
     left: -999em;
     top: -999em;
 }
 
-.abs_clip {
-    position: absolute;
-    clip: rect(0 0 0 0);
+/* visibility */
+.vh{visibility:hidden;}
+.vv{visibility:visible;}
+
+
+/*
+ * 字体粗细
+ */
+.normal{font-weight:normal; font-style:normal;}
+.bold{font-weight:bold;}
+.italic{font-style:italic;}
+
+/*
+ * 行内定位
+ */
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+.tj{text-align:justify;}
+
+
+/* pre换行*/
+.pre-warp{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
+/*
+ * 浮动
+ */
+.fl { float: left;}
+.fr { float: right;}
+.clearFix { clear: both;}  /* 清除浮动需要在 浮动元素完成的下一个不浮动元素上加*/
+/* 去除浮动另外一种方法 推荐()*/
+.fix{*zoom:1;}
+.fix:after{display:block; content:"clear"; height:0; clear:both; visibility:hidden;}
+
+
+
+/*
+ * vertical-align
+ */
+.vm{vertical-align:middle;}
+.vtb{vertical-align:text-bottom;}
+.vb{vertical-align:bottom;}
+.vt{vertical-align:top;}
+.vn{vertical-align:-2px;}
+
+/*
+ *  position
+ */
+.rel{position:relative;}
+.abs{position:absolute;}
+/* cursor */
+.poi{cursor:pointer;}
+.def{cursor:default;}
+/* overflow */
+.ovh{overflow:hidden;}
+.ova{overflow:auto;}
+/* zoom */
+.z{*zoom:1;}
+
+
+
+
+
+
+
+
 /*
  * -----------------------------------------------------------
  * ----------------------2014/3/25 周二------------------------
@@ -1131,9 +1012,14 @@ table {
 
 
 /*
- * 文本css类
- * sherlock
- * 2014/3/25 周二
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------文本类CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. 文本溢出处理
+ * 2. 文本换行
  */
 
 /* 显示一行  溢出显示... */
@@ -1163,6 +1049,19 @@ table {
     text-align: center;
 }
 
+/** 针对webkit 多行文本显示...  **/
+.multi-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.multi-2{  -webkit-line-clamp: 2; }
+.multi-3{  -webkit-line-clamp: 3; }
+.multi-4{  -webkit-line-clamp: 4; }
+
+
+
 
 
 
@@ -1174,7 +1073,6 @@ table {
  * sherlock
  * 2014/3/25 周二
  */
-
 
 
 /* height */
