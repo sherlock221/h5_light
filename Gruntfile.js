@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     var pkg = grunt.file.readJSON("package.json");
 
     var constants = {
-        reset : "src/css/module/reset.css"
+        reset : "src/css/zepto/reset.css"
     };
 
     //初始化Grunt
@@ -18,14 +18,14 @@ module.exports = function(grunt) {
              * 合并全部模块
              */
             zepto_all : {
-                src : ['src/module/*.js'],
+                src : ['src/zepto/*.js'],
                 dest : 'bin/zepto.all.js'
             },
             /**
              * 包含移动端事件模块(精简)
              */
             zepto_touch : {
-                src : ['src/module/zepto.js','src/module/event.js','src/module/touch.js'],
+                src : ['src/zepto/zepto.js','src/zepto/event.js','src/zepto/touch.js'],
                 dest : 'bin/zepto.touch.js'
             },
 
@@ -33,12 +33,12 @@ module.exports = function(grunt) {
              * 包含 基本业务01
              */
             zepto_service_01 : {
-                src : ['src/module/zepto.js','src/module/event.js','src/module/touch.js','src/module/detect.js','src/module/fx.js','src/module/ajax.js','src/module/form.js'],
+                src : ['src/zepto/zepto.js','src/zepto/event.js','src/zepto/touch.js','src/zepto/detect.js','src/zepto/fx.js','src/zepto/ajax.js','src/zepto/form.js'],
                 dest : 'bin/zepto.service.01.js'
             },
 
             build_bootstrap_css : {
-                src :['src/css/module/function.css','src/css/module/text.css','src/css/module/value.css'],
+                src :['src/css/zepto/function.css','src/css/zepto/text.css','src/css/zepto/value.css'],
                 dest : "bin/quick.css"
             },
             build_model_css : {
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             },
 
             build_model_cloud:{
-                src : ['src/css/module/*.css'],
+                src : ['src/css/zepto/*.css'],
                 filter : function(filepath){
                     console.log(filepath);
                     if(filepath == constants.reset){
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
                     }
                     return true;
                 },
-                dest : '../EnterpriseCloudClient/source/css/core/module.css'
+                dest : '../EnterpriseCloudClient/source/css/core/zepto.css'
             }
 
 
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
          },
 
                cloud : {
-                   files : ['src/css/module/*.css'],
+                   files : ['src/css/zepto/*.css'],
                    tasks : ["concat:build_model_cloud"]
 
                },
@@ -138,7 +138,7 @@ module.exports = function(grunt) {
                     expand: true,
 //                    cwd: "./dev/images/",
 //                    src: ["wap/*.{jpg,png,gif}"],
-                    src: ["src/html/wap/*.png"],
+                    src: ["src/demo/wap/*.png"],
                     dest: "src/img/"
                 }]
             }

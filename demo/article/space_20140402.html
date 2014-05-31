@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- 设置viewport 保持宽度1:1比例 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+    <title>HTML 空格的应用</title>
+    <link rel="stylesheet" href="../../../bin/module_noreset.min.css"/>
+</head>
+<body>
+
+<h1 class="tc mb30">
+    HTML5转义字符应用 -- 空格布局
+</h1>
+<p class="tc mb30">sherlock 12:30</p>
+
+<p class="mt10">
+    空格我们见的应该非常多,但是在网页中 用space产生空格是不会累加的 (只有1个),需要用html实体才会累加.
+</p>
+
+
+<p class="mt10">
+
+<table width="100%" border="0" cellspacing="1" cellpadding="10">
+
+    <tbody>
+    <tr>
+        <th scope="col" style="">空格</th>
+        <th scope="col">描述以及说明</th>
+    </tr>
+
+    <tr>
+        <td>
+            &amp;nbsp;
+        </td>
+        <td>
+            也就是按下space键产生的空格。在HTML中，如果你用空格键产生此空格，空格是不会累加的（只算1个）。要使用html实体表示才可累加
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            &amp;ensp;
+        </td>
+        <td>
+            此空格有个相当稳健的特性，就是其占据的宽度正好是1/2个中文宽度，而且基本上不受字体影响。
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            &amp;emsp;
+        </td>
+        <td>
+            该空格学名不详。为了便于记忆，我们不妨就叫它"恶魔(e m-o)空格"。此空格也传承空格家族一贯的特性：透明滴！此空格也有个相当稳健的特性，就是其占据的宽度正好是1个中文宽度，而且基本上不受字体影响。
+        </td>
+    </tr>
+
+    </tbody>
+
+</table>
+
+</p>
+
+
+<h3> 表单应用 </h3>
+
+<p class="lh24">
+    还记得原来写表单时候吗,用户名是3个 密码是2个 邮箱4个 字. 我们的做法都是外层设置固定宽度 然后在设置text-align = "left".
+    <br/>
+    现在我们用空格来做
+</p>
+
+<h3>Code</h3>
+<pre class="pre-warp">
+&lt;ul  style="list-style: none;" class="f16"&gt;
+    &lt;li class="li mt10"&gt;用&amp;ensp;户&amp;ensp;名 ：&lt;input type="text" /&gt;&lt;/li&gt;
+    &lt;li class="li mt10"&gt;密&amp;emsp;&amp;emsp;码 ：&lt;input type="password" /&gt;&lt;/li&gt;
+    &lt;li class="li mt10"&gt;电子邮箱 ：&lt;input type="text" /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h3>效果</h3>
+<ul style="list-style: none;" class="f16">
+    <li class="li mt10">用&ensp;户&ensp;名 ：<input type="text"/></li>
+    <li class="li mt10">密&emsp;&emsp;码 ：<input type="password"/></li>
+    <li class="li mt10">电子邮箱 ：<input type="text"/></li>
+</ul>
+
+
+<p class="tc">参考 http://www.zhangxinxu.com/</p>
+<p class="tc ">感谢观看 by sherlock</p>
+
+<p class="tc">
+    发现更多html5/前端资讯,请关注我
+    <span class="mt10 block">微信号码 : jablock</span>
+    <img class="mt10" src="../../../img/jab-weixin.png">
+</p>
+
+</body>
+</html>

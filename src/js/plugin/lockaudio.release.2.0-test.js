@@ -95,14 +95,14 @@ var LockAudio = function (audioId) {
     });
 
     this.media.addEventListener("progress", function (e) {
-       // _audio.info.html("加载中....");
+       // _audio.info.demo("加载中....");
         _audio.result.append("process....");
     });
 
 
     this.media.addEventListener("stalled", function () {
         console.log("stalled....");
-//        info.html("stalled....");
+//        info.demo("stalled....");
     });
 
         this.media.addEventListener("suspend", function () {
@@ -118,7 +118,7 @@ var LockAudio = function (audioId) {
 
     this.media.addEventListener("error", function () {
         console.log("请求数据时遇到错误....");
-//    info.html("请求数据时遇到错误....");
+//    info.demo("请求数据时遇到错误....");
         _audio.toggleStatus(LockAudio.STATUS.Error,"音频加载失败或不存在");
         _audio.result.append("音频加载失败或不存在....");
     });
@@ -126,7 +126,7 @@ var LockAudio = function (audioId) {
 
     this.media.addEventListener("play", function () {
             console.log("play()和autoplay开始播放时触发....");
-//        _audio.info.html("播放中");
+//        _audio.info.demo("播放中");
         _audio.result.append("播放中....");
     });
 

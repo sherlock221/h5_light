@@ -87,16 +87,16 @@ var LockAudio = function (audioId) {
 
     this.media.addEventListener("progress", function () {
         console.log("正在请求数据....progress...");
-        //_audio.info.html("加载中....");
+        //_audio.info.demo("加载中....");
     });
 
     this.media.addEventListener("suspend", function () {
         console.log("延迟下载....");
-//        info.html("延迟下载....");
+//        info.demo("延迟下载....");
     });
 
     this.media.addEventListener("abort", function () {
-//    info.html("客户端主动终止下载....");
+//    info.demo("客户端主动终止下载....");
         _audio.toggleStatus(LockAudio.STATUS.Error,"客户端终止下载");
         console.log("客户端主动终止下载....");
     });
@@ -104,7 +104,7 @@ var LockAudio = function (audioId) {
 
     this.media.addEventListener("error", function () {
         console.log("请求数据时遇到错误....");
-//    info.html("请求数据时遇到错误....");
+//    info.demo("请求数据时遇到错误....");
         _audio.toggleStatus(LockAudio.STATUS.Error,"音频加载失败或不存在");
     });
 

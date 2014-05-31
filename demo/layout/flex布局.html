@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- 设置viewport 保持宽度1:1比例 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+    <title>webkit浏览器 完美使用flex布局</title>
+    <link rel="stylesheet" href="../../bin/module.css"/>
+     <style type="text/css">
+
+         .jd-product >a{
+             position: relative;
+             padding: 10px 15px;
+             border : 1px solid #cccccc;
+             border-right: 0px;
+             text-align: center;
+         }
+         .jd-product >a.active{
+            border-bottom: 2px solid #e33b3d;
+             color: #e33b3d;
+             padding-bottom: 0;
+         }
+         .tab-inner a:before{
+             content: '\20';
+             width: 1px;
+             height: 44px;
+             position: absolute;
+             top: 0;
+             left: -1px
+         }
+         .searchBtn{
+             width: 44px;
+             overflow: hidden;
+             color: #000;
+                 line-height: 35px;
+             border: 1px solid #cccccc;
+                text-align: center;
+             border-right: 0;
+         }
+
+         .media{
+             border: 1px solid #cccccc;
+         }
+
+         .play{
+             padding: 10px 15px;
+             text-align: center;
+             border-right: 1px solid #cccccc;
+         }
+
+         .full{
+             padding: 10px 15px;
+             text-align: center;
+             border-left: 1px solid #cccccc;
+         }
+         .cot{
+             padding:  0 10px;
+         }
+
+         .progress{
+             position: relative;
+             top: 18px;
+             height: 4px;
+             background: darkmagenta;
+         }
+     </style>
+</head>
+<body>
+
+<h2 class="tc mb30">
+    Flex 伸缩容器 移动端布局利器
+</h2>
+<p class="tc mb30">sherlock 12:30</p>
+
+
+<h4 class="mb15">实现导航条</h4>
+
+<nav class="flex jd-product tab-inner">
+    <span class="searchBtn">查询</span>
+    <a class="flex-1 block active">新发现</a>
+    <a class="flex-1 block">品牌</a>
+    <a class="flex-1 block">聚惠</a>
+</nav>
+
+
+<h4 class="mt15 mb15">左右宽度固定 中间自适应</h4>
+
+<div class="media flex">
+       <span class="play">播放</span>
+       <div class="flex-1 cot">
+           <div class="progress"></div>
+       </div>
+        <span  class="full">全屏</span>
+</div>
+
+
+<p class="mulit-ellipsis" style="height: 100px;">
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢的
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+    测试下文章怎么多行阶段显示呢测试下文章怎么多行阶段显示呢
+</p>
+<p class="tc  mt20">感谢观看 by sherlock</p>
+
+<p class="tc ">
+    发现更多html5/前端资讯,请关注我
+    <span class="mt10 block">微信号码 : jablock</span>
+    <img class="mt10" src="../../img/jab-weixin.png" id="wx">
+</p>
+
+
+</body>
+</html>
+<script type="text/javascript" src="../../bin/zepto.service.01.min.js"></script>
+<script type="text/javascript">
+
+    $(" .jd-product").find("a").bind("tap",function(){
+           $(this).addClass("active").siblings().removeClass("active");
+    });
+
+</script>
