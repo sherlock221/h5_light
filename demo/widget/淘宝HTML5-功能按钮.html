@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- 设置viewport 保持宽度1:1比例 -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+    <title>淘宝首页轮盘按钮</title>
+    <link rel="stylesheet" href="../../bin/module.css"/>
+    <style type="text/css">
+        .lunpan-img {
+            background-image: url("../../img/taobo-pan.png");
+            background-repeat: no-repeat;
+
+            /** 针对视网膜屏幕 **/
+            -webkit-background-size: 195px 274px;
+            background-size: 195px 274px;
+        }
+
+        .taoplus .tpbtn.off {
+            background-position: -55.2px -197px;
+        }
+
+        .taoplus .tpbtn.on {
+            background-position: 1px -197px;
+        }
+
+        .taoplus .tpbtn {
+            position: relative;
+            width: 54px;
+            height: 54px;
+        }
+
+        .taoplus .icon {
+            background-position: -107px -200px;
+
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 200px;
+            -webkit-border-radius: 200px;
+        }
+
+        .taoplus > div {
+
+        }
+
+
+        .taoplus .tpicons{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 195px;
+            height: 195px;
+            overflow: hidden;
+        }
+        .taoplus .tpicons .more {
+            right: 22px;
+            bottom: 9px;
+            width: 76px;
+            height: 64px;
+        }
+        .taoplus .tpicons .logis{
+            left: 22px;
+            bottom: 10px;
+            width: 78px;
+            height: 63px;
+        }
+        .taoplus .tpicons ul li{
+            position: absolute;
+        }
+
+        .taoplus .circle.show{
+            opacity: 1;
+            -webkit-transform: translate(0px, 0px) scale(1);
+            pointer-events: auto;
+        }
+
+        .taoplus .circle.hide{
+            opacity: 0;
+            -webkit-transform: translate(-100px, 100px) scale(0.2);
+            pointer-events: none;
+        }
+
+        .taoplus .circle{
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+            width: 195px;
+            height: 195px;
+            overflow: hidden;
+            -webkit-transition: all linear 0.15s;
+        }
+    </style>
+</head>
+<body>
+
+<h2 class="tc mb30">
+    淘宝html5 首页的轮盘按钮
+</h2>
+
+<div class="taoplus">
+    <div class="tpbtn on lunpan-img">
+        <span class="inline-block icon lunpan-img"></span>
+    </div>
+
+    <div class="circle hide">
+    <div class="tpicons lunpan-img">
+        <ul>
+            <li class="more"><a
+                    dataurl="http://m.taobao.com/channel/chn/mobile/application.html?pds=apply%23h%23taojia"></a><span
+                    class="bg"></span></li>
+            <li class="logis"><a dataurl="http://h5.m.taobao.com/awp/mtb/olist.htm?#!/awp/mtb/olist.htm?sta=5"></a><span
+                    class="bg"></span></li>
+            <li class="ww"><a dataurl="http://h5.m.taobao.com/ww/index.htm?#!lateConts"></a><span class="bg"></span>
+            </li>
+            <li class="individ"><a dataurl="http://h5.m.taobao.com/awp/mtb/mtb.htm?#!/awp/mtb/mtb.htm"></a><span
+                    class="bg"></span></li>
+            <li class="car"><a
+                    dataurl="http://h5.m.taobao.com/awp/base/cart.htm?pds=cart%23h%23taojia#!/awp/base/cart.htm"></a><span
+                    class="bg"></span></li>
+            <li class="search"><a
+                    dataurl="http://m.taobao.com/channel/act/sale/searchlist.html?pds=search%23h%23taojia"></a><span
+                    class="bg"></span></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+
+
+
+<p class="tc mb30">sherlock 12:30</p>
+
+
+<p class="tc  mt20">感谢观看 by sherlock</p>
+
+<p class="tc ">
+    发现更多html5/前端资讯,请关注我
+    <span class="mt10 block">微信号码 : jablock</span>
+    <img class="mt10" src="../../img/jab-weixin.png" id="wx">
+</p>
+
+
+</body>
+</html>
+<script type="text/javascript" src="../../bin/zepto.service.01.min.js"></script>
+
+<script type="text/javascript">
+
+    $(".tpbtn").click(function(){
+        $(".circle").removeClass("hide").addClass("show");
+    });
+
+</script>
