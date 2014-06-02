@@ -59,3 +59,19 @@
     position: absolute;
     clip: rect(0 0 0 0);
 }
+
+
+/** 背景图片自适应 保持宽高比例 **/
+/** 可以使用任意一根元素实现 需要添加background 属性指定图片 **/
+.full-screen-bg{
+    position: absolute; /** 绝对定位之后，上下左右四边都与手机屏幕贴紧，从而做到了适配各种屏幕 **/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-size: cover;   /** 保持图像宽高比 将图片缩放到正好完全覆盖定义的背景区域，其中有一边和背景相同 **/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}

@@ -55,6 +55,37 @@
 
 /** IOS 滑动菜单 end**/
 
+/** 秋千 **/
+.ios-scale{
+    -webkit-animation:ios-scale 1s .2s ease both;
+    -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes ios-scale{
+    0% {
+        -webkit-transform:scale(2)
+    }
+    100% {-webkit-transform:scale(2)}
+}
+
+
+/** 秋千 **/
+.qiuqian{
+    -webkit-animation:tada 1s .2s ease both;
+    -moz-animation:tada 1s .2s ease both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes tada{
+    0%{}
+    10%,30%,50%,70%,90%{-webkit-transform: rotate(4deg)}
+    20%,40%,60%,80%{-webkit-transform: rotate(-4deg)}
+    100%{ rotate(0)}
+}
+
+
+
 
 
 /** 摇摆 **/
