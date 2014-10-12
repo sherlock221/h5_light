@@ -9,9 +9,7 @@ module.exports = function(grunt) {
 
     //初始化Grunt
     grunt.initConfig({
-
         pkg :pkg,
-
         /** 合并 **/
         concat  : {
             /**
@@ -29,78 +27,46 @@ module.exports = function(grunt) {
                 dest : 'bin/zepto.touch.js'
             },
 
-            /**
-             * 包含 基本业务01
-             */
-            zepto_service_01 : {
-                src : ['src/zepto/zepto.js','src/zepto/event.js','src/zepto/touch.js','src/zepto/detect.js','src/zepto/fx.js','src/zepto/ajax.js','src/zepto/form.js'],
-                dest : 'bin/zepto.service.01.js'
-            },
 
-            build_bootstrap_css : {
-                src :['src/css/zepto/function.css','src/css/zepto/text.css','src/css/zepto/value.css'],
-                dest : "bin/quick.css"
-            },
+            /** 合并模块css **/
             build_model_css : {
                 src : ['src/css/module/*.css'],
-                dest : 'bin/module.css'
+                dest : 'src/css/module.css'
             },
 
-            build_model_css_noreset : {
-                src : ['src/css/module/*.css'],
-                filter : function(filepath){
-                    console.log(filepath);
-                    if(filepath == constants.reset){
-                        return false;
-                    }
-                    return true;
-                },
-                dest : 'bin/module_noreset.css'
-            },
-
-            build_model_cloud:{
-                src : ['src/css/zepto/*.css'],
-                filter : function(filepath){
-                    console.log(filepath);
-                    if(filepath == constants.reset){
-                        return false;
-                    }
-                    return true;
-                },
-                dest : '../EnterpriseCloudClient/source/css/core/zepto.css'
+            /** 模块css + 基本设置css **/
+            build_setting_css : {
+                src : ['src/css/module.css'],
+                dest : 'dist/css/h5_light.css'
             }
 
 
+//            build_css : {
+//                src : ['src/css/module/*.css'],
+//                filter : function(filepath){
+//                    console.log(filepath);
+//                    if(filepath == constants.reset){
+//                        return false;
+//                    }
+//                    return true;
+//                },
+//                dest : 'bin/module_noreset.css'
+//            }
         },
 
         /**  监听文件夹并且执行任务 **/
         watch : {
             css : {
-                files : ['src/css/module/*.css'],
-                tasks : ["concat:build_model_css","concat:build_model_css_noreset","cssmin"],
+                files : ['src/css/*.css'],
+                tasks : ["concat:build_model_css","concat:build_setting_css","cssmin"],
                 options : {
                     //默认 35729端口
                     livereload : true
                 }
-         },
+         }
 
-               cloud : {
-                   files : ['src/css/zepto/*.css'],
-                   tasks : ["concat:build_model_cloud"]
-
-               },
-
-
-            lad : {
-                files : ['src/css/plugin/lockaudio.css'],
-                tasks : ["cssmin:audio"],
-                options : {
-                    //默认 35729端口
-                    livereload : true
-                }
-            }
         },
-        /** 压缩css **/
+        /** 压缩js **/
         uglify : {
             zepto_service_01 : {
                 src : "bin/zepto.service.01.js",
@@ -117,39 +83,15 @@ module.exports = function(grunt) {
         cssmin : {
             options : {
             },
-            build : {
-                src : 'bin/module.css',
-                dest : 'bin/module.min.css'
-            },
-            build_noreset : {
-                src : 'bin/module_noreset.css',
-                dest : 'bin/module_noreset.min.css'
-            },
-            audio : {
-                src : 'src/css/plugin/lockaudio.css',
-                dest : 'bin/lockaudio/lockaudio.min.css'
+            min_css : {
+                src : 'dist/css/h5_light.css',
+                dest : 'dist/css/h5_light.min.css'
             }
         },
-
-        imagemin: {
-            /* 压缩图片大小 */
-            dist: {
-                files: [{
-                    expand: true,
-//                    cwd: "./dev/images/",
-//                    src: ["wap/*.{jpg,png,gif}"],
-                    src: ["src/demo/wap/*.png"],
-                    dest: "src/img/"
-                }]
-            }
-        },
-
         /** js代码检查  **/
         jshint: {
             src : "src/js/*.js"
         }
-
-
     });
 
 
@@ -163,10 +105,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     //watch 监听
     grunt.loadNpmTasks('grunt-contrib-watch');
-
-    //压缩图片
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-
 
 
 };

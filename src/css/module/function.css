@@ -75,3 +75,66 @@
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+
+/*
+ * 元素可见度
+ */
+.hide{display:none;}
+.inline{display:inline;}
+.block{display:block;}
+.inline-block{
+    display:inline-block;
+    vertical-align: middle;
+    *display:inline; letter-spacing:0;
+    *zoom:1;
+}
+
+/* 绝对定位隐藏 */
+.abs_hidde {
+    position: absolute;
+    left: -999em;
+    top: -999em;
+}
+
+
+/*
+ * 字体粗细
+ */
+.normal{font-weight:normal; font-style:normal;}
+.bold{font-weight:bold;}
+.italic{font-style:italic;}
+
+/*
+ * 行内定位
+ */
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+.tj{text-align:justify;}
+
+
+/* pre换行*/
+.pre-warp{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/*
+ * 浮动
+ */
+.pull-left { float: left;}
+.pull-right { float: right;}
+.clearFix { clear: both;}  /* 清除浮动需要在 浮动元素完成的下一个不浮动元素上加*/
+/* 去除浮动另外一种方法 推荐()*/
+.fix{*zoom:1;}
+.fix:after{display:block; content:"clear"; height:0; clear:both; visibility:hidden;}
+
+/*
+ *  position
+ */
+.rel{position:relative;}
+.abs{position:absolute;}
+/* cursor */
+.poi{cursor:pointer;}
+.def{cursor:default;}
