@@ -106,5 +106,6 @@ module.exports = function(grunt) {
     //watch 监听
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-
+    //合并全部css并压缩
+    grunt.registerTask('css',  ["concat:build_model_css","concat:build_setting_css","cssmin"]);
 };

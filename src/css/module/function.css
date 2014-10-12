@@ -82,7 +82,7 @@
 .hide{display:none;}
 .inline{display:inline;}
 .block{display:block;}
-.inline-block{
+.ib{
     display:inline-block;
     vertical-align: middle;
     *display:inline; letter-spacing:0;
