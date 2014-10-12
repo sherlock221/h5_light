@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 
             /** 模块css + 基本设置css **/
             build_setting_css : {
-                src : ['src/css/module.css'],
+                src : ['src/css/module.css',"src/css/setting.css"],
                 dest : 'dist/css/h5_light.css'
             },
 

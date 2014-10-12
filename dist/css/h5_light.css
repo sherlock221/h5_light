@@ -1061,3 +1061,67 @@ th {
 .lt1{letter-spacing:1px;}
 
 
+
+/*
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------页面基本设置CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ */
+
+/** 禁止选择 和  tap颜色 **/
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, textarea {   -webkit-user-select: text;  }
+
+html, body {
+    /** 字体类型 **/
+    font-family: "Helvetica Neue", Helvetica, "microsoft yahei", STHeiTi, Arial, sans-serif;
+    /** 字体大小 **/
+    font-size: 12px;
+    /** 字体颜色 **/
+    color: #fff;
+    line-height: 1.5;
+
+    width: 100%;
+    height: 100%;
+}
+
+/** 超链接的颜色 **/
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #0088cc;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    outline: 0;
+    color: #006699;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote { margin: 0; }
+ul, ol, li, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none outside none; }
+h1, h2, h3 { line-height: 2; font-weight: normal; }
+
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
+
+
+/** placeholder颜色 **/
+/*input::-moz-placeholder, textarea::-moz-placeholder {*/
+    /*color: #cccccc;*/
+/*}*/
+/*input:-ms-input-placeholder, textarea:-ms-input-placeholder {*/
+    /*color: #cccccc;*/
+/*}*/
+/*input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {*/
+    /*color: #cccccc;*/
+/*}*/
