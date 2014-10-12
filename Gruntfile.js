@@ -12,20 +12,7 @@ module.exports = function(grunt) {
         pkg :pkg,
         /** 合并 **/
         concat  : {
-            /**
-             * 合并全部模块
-             */
-            zepto_all : {
-                src : ['src/zepto/*.js'],
-                dest : 'bin/zepto.all.js'
-            },
-            /**
-             * 包含移动端事件模块(精简)
-             */
-            zepto_touch : {
-                src : ['src/zepto/zepto.js','src/zepto/event.js','src/zepto/touch.js'],
-                dest : 'bin/zepto.touch.js'
-            },
+
 
 
             /** 合并模块css **/
@@ -38,8 +25,13 @@ module.exports = function(grunt) {
             build_setting_css : {
                 src : ['src/css/module.css'],
                 dest : 'dist/css/h5_light.css'
-            }
+            },
 
+            /** 场景应用js打包  包括(微信sdk scrollsdk 图片异步加载js ) **/
+            build_scene : {
+                src : ['src/js/common/common.js',"src/js/common/scroll.js","src/js/common/weixin.js","src/js/common/loader.min.js"],
+                dest : 'dist/js/scene.js'
+            }
 
 //            build_css : {
 //                src : ['src/css/module/*.css'],
@@ -68,13 +60,10 @@ module.exports = function(grunt) {
         },
         /** 压缩js **/
         uglify : {
-            zepto_service_01 : {
-                src : "bin/zepto.service.01.js",
-                dest : "bin/zepto.service.01.min.js"
-            },
-            iscroll : {
-                src : "src/js/plugin/iscroll.js",
-                dest : "bin/iscroll.min.js"
+
+            build_scene : {
+                src :  'dist/js/scene.js',
+                dest : "dist/js/scene.min.js"
             }
 
         },
@@ -108,4 +97,7 @@ module.exports = function(grunt) {
 
     //合并全部css并压缩
     grunt.registerTask('css',  ["concat:build_model_css","concat:build_setting_css","cssmin"]);
+
+    //场景应用js打包
+    grunt.registerTask('scene',  ["concat:build_scene","uglify:build_scene"]);
 };
