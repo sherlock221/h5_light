@@ -120,6 +120,15 @@
     word-break: break-all;
 }
 
+/** 隐藏内容 seo优化 **/
+.hidden-val {
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 /*
  * 浮动
  */
