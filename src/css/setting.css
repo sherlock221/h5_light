@@ -6,15 +6,34 @@
  * -----------------------------------------------------------
  */
 
-/** 禁止选择 和  tap颜色 **/
-* {
+@charset "utf-8";
+
+
+
+
+*,
+*:before,
+*:after {
+
+    /** w3c 盒模型 **/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+    /** 取消掉tap颜色 **/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
+
+
 
 input, textarea {   -webkit-user-select: text;  }
 
 html, body {
-    /** 字体类型 **/
+
+    /** 非衬线字体（sans-serif） **/
     font-family: "Helvetica Neue", Helvetica, "microsoft yahei", STHeiTi, Arial, sans-serif;
     /** 字体大小 **/
     font-size: 12px;
@@ -49,6 +68,10 @@ h1, h2, h3 { line-height: 2; font-weight: normal; }
 h1 { font-size: 1.8rem; }
 h2 { font-size: 1.6rem; }
 h3 { font-size: 1.4rem; }
+
+
+
+
 
 
 /** placeholder颜色 **/

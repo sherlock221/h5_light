@@ -41,6 +41,16 @@
     text-size-adjust: none;
 }
 
+
+/** 响应式图片 **/
+img{
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
 /** 响应图片 **/
 .response-img{
     max-width: 100%;
@@ -53,6 +63,9 @@
     width: 100%;
     height: auto;
 }
+
+
+
 
 /** 裁剪 **/
 .abs_clip {
