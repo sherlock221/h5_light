@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * sherlock221b
+ * float布局方式
+ */
+/*
+ * 浮动布局
+ * 提供 2,3,4,5,6列的布局
+ */
+.flot-box {
+  clear: both; }
+  .flot-box .f2, .flot-box .f3, .flot-box .f4, .flot-box .f5, .flot-box .f6 {
+    float: left; }
+  .flot-box .f2 {
+    width: 49.9%; }
+  .flot-box .f3 {
+    width: 33.333%; }
+  .flot-box .f4 {
+    width: 24.9%; }
+  .flot-box .f5 {
+    width: 19.9%; }
+  .flot-box .f6 {
+    width: 16.6%; }
+
+/*# sourceMappingURL=float.css.map */

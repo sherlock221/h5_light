@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * sherlock221b
+ * table布局方式
+ */
+.tb-box {
+  display: table; }
+  .tb-box .row {
+    display: table-row; }
+  .tb-box .col {
+    display: table-cell; }
+  .tb-box .vt {
+    vertical-align: top; }
+  .tb-box .mt {
+    vertical-align: middle; }
+  .tb-box .bt {
+    vertical-align: bottom; }
+
+/*# sourceMappingURL=table.css.map */

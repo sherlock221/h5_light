@@ -1,0 +1,26 @@
+@charset "utf-8";
+/**
+ * sherlock221b
+ * inlie布局方式
+ */
+
+.ib{
+  display:inline-block;
+  *display:inline;
+  letter-spacing:0;
+  vertical-align:top;
+  *zoom:1;
+}
+
+
+.ib-box{
+  .vt{
+    vertical-align: top;
+  }
+  .vb{
+    vertical-align: bottom;
+  }
+  .vm{
+    vertical-align: middle;
+  }
+}

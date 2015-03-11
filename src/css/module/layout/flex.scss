@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/**
+ * sherlock221b
+ * flex布局方式
+ */
+
+.fx-row{
+  @include display-flex();
+  width: 100%;
+}
+.fx-wrap{
+  @include flex-wrap(wrap);
+}
+
+.fx-col-1,.fx-col-2,.fx-col-3,.fx-col-4,.fx-col-5,.fx-col-6,.fx-col-7,.fx-col-8,.fx-col-9{
+  display: block;
+  width: 100%;
+}
+
+.fx-col-1{  @include flex(1);}
+.fx-col-2{  @include flex(2);}
+.fx-col-3{  @include flex(3);}
+.fx-col-4{  @include flex(4);}
+.fx-col-5{  @include flex(5);}
+.fx-col-6{  @include flex(6);}
+.fx-col-7{  @include flex(7);}
+.fx-col-8{  @include flex(8);}
+.fx-col-9{  @include flex(9);}
+
+
+
+
+
+//对齐方式
+/* .row-* vertically aligns every .col in the .row */
+.fx-row-top {
+  @include align-items(flex-start);
+}
+.fx-row-bottom {
+  @include align-items(flex-end);
+}
+.fx-row-center {
+  @include align-items(center);
+}
+.fx-row-stretch {
+  @include align-items(stretch);
+}
+.fx-row-baseline {
+  @include align-items(baseline);
+}
+
+/* .col-* vertically aligns an individual .col */
+.fx-col-top {
+  @include align-self(flex-start);
+}
+.fx-col-bottom {
+  @include align-self(flex-end);
+}
+.fx-col-center {
+  @include align-self(center);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
