@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+ * 元素可见度
+ */
+.hide {
+  display: none; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  letter-spacing: 0;
+  *zoom: 1; }
+
+/* 绝对定位隐藏 */
+.abs_hidde {
+  position: absolute;
+  left: -999em;
+  top: -999em; }
+
+/*# sourceMappingURL=show.css.map */

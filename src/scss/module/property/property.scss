@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+
+/*
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------功能CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. 常用功能
+ */
+
+/** 开启硬件加速(飞起) **/
+.D3{
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/** 防止长按弹出菜单 **/
+.nus{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+/* tap颜色清空 */
+.ntp{
+  /* Prevent elements to be highlighted on tap */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/** 防止文本调整方向变化 **/
+.tsd{
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+
+/** 响应式图片 **/
+img{
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+/** 响应图片 **/
+.response-img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/** 全屏图片 **/
+.tile-img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+/** 裁剪 **/
+.abs_clip {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+
+/** 背景图片自适应 保持宽高比例 **/
+/** 可以使用任意一根元素实现 需要添加background 属性指定图片 **/
+.full-screen-bg{
+  position: absolute; /** 绝对定位之后，上下左右四边都与手机屏幕贴紧，从而做到了适配各种屏幕 **/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-size: cover;   /** 保持图像宽高比 将图片缩放到正好完全覆盖定义的背景区域，其中有一边和背景相同 **/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/*
+ * 元素可见度
+ */
+.hide{display:none;}
+.inline{display:inline;}
+.block{display:block;}
+.ib{
+  display:inline-block;
+  vertical-align: middle;
+  *display:inline; letter-spacing:0;
+  *zoom:1;
+}
+
+/* 绝对定位隐藏 */
+.abs_hidde {
+  position: absolute;
+  left: -999em;
+  top: -999em;
+}
+
+
+/*
+ * 字体粗细
+ */
+.font-normal{font-weight:normal; font-style:normal;}
+.font-bold{font-weight:bold;}
+.font-italic{font-style:italic;}
+
+
+
+/* pre换行*/
+.pre-warp{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/** 隐藏内容 seo优化 **/
+.hidden-val {
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/*
+ * 浮动
+ */
+.pull-left { float: left;}
+.pull-right { float: right;}
+.clearFix { clear: both;}  /* 清除浮动需要在 浮动元素完成的下一个不浮动元素上加*/
+/* 去除浮动另外一种方法 推荐()*/
+.fix{*zoom:1;}
+.fix:after{display:block; content:"clear"; height:0; clear:both; visibility:hidden;}
+
+/*
+ *  position
+ */
+.rel{position:relative;}
+.abs{position:absolute;}
+/* cursor */
+.poi{cursor:pointer;}
+.def{cursor:default;}

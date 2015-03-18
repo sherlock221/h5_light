@@ -1,16 +1,12 @@
-@charset "utf-8";
+@charset "UTF-8";
 /**
  * sherlock221b
  * 位置调整
  */
-
-
-
 /* 块元素水平居中(需要设置宽度,block) */
 /* div等标签 */
 .block-center {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /* 大小不定元素垂直居中(外层设置宽 高) */
 /* 注意img元素 需要vertical-aligin :  middle*/
@@ -20,26 +16,22 @@
   height: 100%;
   content: "center";
   vertical-align: middle;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-//文本或 inline元素居中
-.text-center{
-  text-align: center;
-}
-.text-left{
-  text-align: left;
-}
+.text-center {
+  text-align: center; }
 
-.text-right{
-  text-align: right;
-}
+.text-left {
+  text-align: left; }
 
+.text-right {
+  text-align: right; }
 
-//css3 水平垂直居中
-.tran-center{
+.tran-center {
   position: absolute;
   left: 50%;
   top: 50%;
-  @include transform(translate(-50%, -50%));
-}
+  -webkit-transform: translate(-50%, -50%);
+  /* 50%为自身尺寸的一半 */ }
+
+/*# sourceMappingURL=position.css.map */
