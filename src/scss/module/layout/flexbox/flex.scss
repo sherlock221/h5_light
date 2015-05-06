@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import "mixin/layout/flexbox-mixin";
+
+/**
+ * sherlock221b
+ * flexbox布局方式
+ */
+
+
+
+/**
+ * 伸缩容器
+ * <div class="fx-row"></div>
+ */
+.fx-row{
+  @include flexbox;
+  width: 100%;
+}
+
+
+
+/**
+ * 伸缩项目
+ * <div class="fx-col"></div>
+ */
+.fx-col,.fx-col-1,.fx-col-2,.fx-col-3,.fx-col-4,.fx-col-5,.fx-col-6,.fx-col-7,.fx-col-8,.fx-col-9{
+  display: block;
+  width: 100%;
+}
+
+
+.fx-col{ @include flex(1)};
+.fx-col-1{  @include flex(1);}
+.fx-col-2{  @include flex(2);}
+.fx-col-3{  @include flex(3);}
+.fx-col-4{  @include flex(4);}
+.fx-col-5{  @include flex(5);}
+.fx-col-6{  @include flex(6);}
+.fx-col-7{  @include flex(7);}
+.fx-col-8{  @include flex(8);}
+.fx-col-9{  @include flex(9);}
+
+
+
+/**
+ * wrap策略
+ */
+.fx-wrap{
+  @include flex-wrap(wrap);
+}
+
+
+
+/**
+ * 垂直方向
+ * 子元素沿着侧轴排列方式
+ * align-items : flex-start | flex-end | center | baseline | stretch;
+ */
+.fx-row-top {
+  @include align-items(flex-start);
+}
+.fx-row-bottom {
+  @include align-items(flex-end);
+}
+.fx-row-center {
+  @include align-items(center);
+}
+.fx-row-stretch {
+  @include align-items(stretch);
+}
+.fx-row-baseline {
+  @include align-items(baseline);
+}
+
+
+/**
+ * 水平方向
+ * 子元素沿着主轴排列方式
+ * justify-content: flex-start | flex-end | center | space-between | space-around;
+ */
+.fx-row-left{
+  @include justify-content(flex-star);
+}
+.fx-row-middle{
+  @include justify-content(center);
+}
+.fx-row-right{
+  @include justify-content(flex-end);
+}
+.fx-row-space-between{
+  @include justify-content(space-between);
+}
+.fx-row-space-around{
+  @include justify-content(space-around);
+}
+
+
+
+/**
+ * 覆盖父元素的align-items属性，定义了单独的弹性子元素如何沿着侧轴排列
+ */
+.fx-col-top {
+  @include align-self(flex-start);
+}
+.fx-col-bottom {
+  @include align-self(flex-end);
+}
+.fx-col-center {
+
+  @include align-self(center);
+}
+
+
+
+
+//.fx-col-left {
+//  @include align-content(flex-start);
+//}
+//.fx-col-right {
+//  @include align-content(flex-end);
+//}
+//.fx-col-middle {
+//  @include align-content(center);
+//}
+//.fx-col-space-between{
+//  @include align-content(space-between);
+//}
+//.fx-col-space-around{
+//  @include align-content(space-around);
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
