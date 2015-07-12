@@ -1,0 +1,802 @@
+@charset "UTF-8";
+/**
+ * sherlock221b
+ * rem常用设计函数
+ */
+/**
+ * sherlock221b
+ * 动画部分常用
+ */
+/**
+ * sherlock221b
+ * flexbox布局方式
+ */
+/**
+ * 伸缩容器
+ * <div class="fx-row"></div>
+ */
+.fx-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+/**
+ * 伸缩项目
+ * <div class="fx-col"></div>
+ */
+.fx-col, .fx-col-1, .fx-col-2, .fx-col-3, .fx-col-4, .fx-col-5, .fx-col-6, .fx-col-7, .fx-col-8, .fx-col-9 {
+  display: block;
+  width: 100%; }
+
+.fx-col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.fx-col-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.fx-col-2 {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -moz-box-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
+
+.fx-col-3 {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -moz-box-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
+
+.fx-col-4 {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+  -moz-box-flex: 4;
+  -moz-flex: 4;
+  -ms-flex: 4;
+  flex: 4; }
+
+.fx-col-5 {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  -moz-box-flex: 5;
+  -moz-flex: 5;
+  -ms-flex: 5;
+  flex: 5; }
+
+.fx-col-6 {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+  -moz-box-flex: 6;
+  -moz-flex: 6;
+  -ms-flex: 6;
+  flex: 6; }
+
+.fx-col-7 {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+  -moz-box-flex: 7;
+  -moz-flex: 7;
+  -ms-flex: 7;
+  flex: 7; }
+
+.fx-col-8 {
+  -webkit-box-flex: 8;
+  -webkit-flex: 8;
+  -moz-box-flex: 8;
+  -moz-flex: 8;
+  -ms-flex: 8;
+  flex: 8; }
+
+.fx-col-9 {
+  -webkit-box-flex: 9;
+  -webkit-flex: 9;
+  -moz-box-flex: 9;
+  -moz-flex: 9;
+  -ms-flex: 9;
+  flex: 9; }
+
+/**
+ * wrap策略
+ */
+.fx-wrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/**
+ * 垂直方向
+ * 子元素沿着侧轴排列方式
+ * align-items : flex-start | flex-end | center | baseline | stretch;
+ */
+.fx-row-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+
+.fx-row-bottom {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end; }
+
+.fx-row-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+.fx-row-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch; }
+
+.fx-row-baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline; }
+
+/**
+ * 水平方向
+ * 子元素沿着主轴排列方式
+ * justify-content: flex-start | flex-end | center | space-between | space-around;
+ */
+.fx-row-left {
+  -webkit-box-pack: flex-star;
+  -ms-flex-pack: flex-star;
+  -webkit-justify-content: flex-star;
+  -moz-justify-content: flex-star;
+  justify-content: flex-star; }
+
+.fx-row-middle {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.fx-row-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end; }
+
+.fx-row-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.fx-row-space-around {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around; }
+
+/**
+ * 覆盖父元素的align-items属性，定义了单独的弹性子元素如何沿着侧轴排列
+ */
+.fx-col-top {
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.fx-col-bottom {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.fx-col-center {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+/**
+ * sherlock221b
+ * table布局方式
+ */
+.tb-box {
+  display: table; }
+  .tb-box .row {
+    display: table-row; }
+  .tb-box .col {
+    display: table-cell; }
+  .tb-box .vt {
+    vertical-align: top; }
+  .tb-box .mt {
+    vertical-align: middle; }
+  .tb-box .bt {
+    vertical-align: bottom; }
+
+/**
+ * sherlock221b
+ * float布局方式
+ */
+/*
+ * 浮动布局
+ * 提供 2,3,4,5,6列的布局
+ */
+.float-box {
+  clear: both; }
+  .float-box .f2, .float-box .f3, .float-box .f4, .float-box .f5, .float-box .f6 {
+    float: left; }
+  .float-box .f2 {
+    width: 49.999999%; }
+  .float-box .f3 {
+    width: 33.333333%; }
+  .float-box .f4 {
+    width: 24.999999%; }
+  .float-box .f5 {
+    width: 19.999999%; }
+  .float-box .f6 {
+    width: 16.666666%; }
+
+/**
+ * sherlock221b
+ * inlie布局方式
+ */
+.ib {
+  display: inline-block;
+  *display: inline;
+  letter-spacing: 0;
+  vertical-align: top;
+  *zoom: 1; }
+
+.ib-box .vt {
+  vertical-align: top; }
+.ib-box .vb {
+  vertical-align: bottom; }
+.ib-box .vm {
+  vertical-align: middle; }
+
+/**
+ * sherlock221b
+ * 位置调整
+ */
+/* 块元素水平居中(需要设置宽度,block) */
+/* div等标签 */
+.block-center {
+  margin: 0 auto; }
+
+/* 大小不定元素垂直居中(外层设置宽 高) */
+/* 注意img元素 需要vertical-aligin :  middle*/
+.v-align:after {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  content: "center";
+  vertical-align: middle;
+  overflow: hidden; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.tran-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+/**
+ * sherlock221b
+ * float布局方式
+ */
+/*
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------文本类CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. 文本溢出处理
+ * 2. 文本换行
+ */
+/* 显示一行  溢出显示... */
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/* 显示一行 截断显示 */
+.text-clip {
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/* 强制换行显示 */
+/*  word-wrap 对于长英文无解*/
+.text-wrap {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+/* 文字居中*/
+.text-center {
+  text-align: center; }
+
+/** 针对webkit 多行文本显示...  **/
+.multi-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.multi-2 {
+  -webkit-line-clamp: 2; }
+
+.multi-3 {
+  -webkit-line-clamp: 3; }
+
+.multi-4 {
+  -webkit-line-clamp: 4; }
+
+.m0 {
+  margin: 0; }
+
+.ml1 {
+  margin-left: 1px; }
+
+.ml2 {
+  margin-left: 2px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.ml30 {
+  margin-left: 30px; }
+
+.mr1 {
+  margin-right: 1px; }
+
+.mr2 {
+  margin-right: 2px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mr30 {
+  margin-right: 30px; }
+
+.mt1 {
+  margin-top: 1px; }
+
+.mt2 {
+  margin-top: 2px; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt35 {
+  margin-top: 35px; }
+
+.mb1 {
+  margin-bottom: 1px; }
+
+.mb2 {
+  margin-bottom: 2px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb35 {
+  margin-bottom: 35px; }
+
+.ml-1 {
+  margin-left: -1px; }
+
+.mr-1 {
+  margin-right: -1px; }
+
+.mt-1 {
+  margin-top: -1px; }
+
+.mb-1 {
+  margin-bottom: -1px; }
+
+.ml-3 {
+  margin-left: -3px; }
+
+.mr-3 {
+  margin-right: -3px; }
+
+.mt-3 {
+  margin-top: -3px; }
+
+.mb-3 {
+  margin-bottom: -3px; }
+
+.ml-20 {
+  margin-left: -20px; }
+
+.mr-20 {
+  margin-right: -20px; }
+
+.mt-20 {
+  margin-top: -20px; }
+
+.mb-20 {
+  margin-bottom: -20px; }
+
+.p0 {
+  padding: 0; }
+
+.p1 {
+  padding: 1px; }
+
+.pl1 {
+  padding-left: 1px; }
+
+.pt1 {
+  padding-top: 1px; }
+
+.pr1 {
+  padding-right: 1px; }
+
+.pb1 {
+  padding-bottom: 1px; }
+
+.p2 {
+  padding: 2px; }
+
+.pl2 {
+  padding-left: 2px; }
+
+.pt2 {
+  padding-top: 2px; }
+
+.pr2 {
+  padding-right: 2px; }
+
+.pb2 {
+  padding-bottom: 2px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.p5 {
+  padding: 5px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.p10 {
+  padding: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.p15 {
+  padding: 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.p20 {
+  padding: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.p30 {
+  padding: 30px; }
+
+.pl30 {
+  padding-left: 30px; }
+
+.pt30 {
+  padding-top: 30px; }
+
+.pr30 {
+  padding-right: 30px; }
+
+.pb30 {
+  padding-bottom: 30px; }
+
+/*
+ * -----------------------------------------------------------
+ * ----------------------2014/3/25 周二------------------------
+ * ----------------------功能CSS--------------------
+ * ------------------------sherlock---------------------------
+ * -----------------------------------------------------------
+ * 重点说明:
+ * 1. 常用功能
+ */
+/** 开启硬件加速(飞起) **/
+.D3 {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0); }
+
+/** 防止长按弹出菜单 **/
+.nus {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* tap颜色清空 */
+.ntp {
+  /* Prevent elements to be highlighted on tap */
+  -webkit-tap-highlight-color: transparent; }
+
+/** 防止文本调整方向变化 **/
+.tsd {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none; }
+
+/** 响应式图片 **/
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0; }
+
+/** 响应图片 **/
+.response-img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/** 全屏图片 **/
+.tile-img {
+  width: 100%;
+  height: auto; }
+
+/** 裁剪 **/
+.abs_clip {
+  position: absolute;
+  clip: rect(0 0 0 0); }
+
+/** 背景图片自适应 保持宽高比例 **/
+/** 可以使用任意一根元素实现 需要添加background 属性指定图片 **/
+.full-screen-bg {
+  position: absolute;
+  /** 绝对定位之后，上下左右四边都与手机屏幕贴紧，从而做到了适配各种屏幕 **/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-size: cover;
+  /** 保持图像宽高比 将图片缩放到正好完全覆盖定义的背景区域，其中有一边和背景相同 **/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+/*
+ * 元素可见度
+ */
+.hide {
+  display: none; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  letter-spacing: 0;
+  *zoom: 1; }
+
+/* 绝对定位隐藏 */
+.abs_hidde {
+  position: absolute;
+  left: -999em;
+  top: -999em; }
+
+/*
+ * 字体粗细
+ */
+.font-normal {
+  font-weight: normal;
+  font-style: normal; }
+
+.font-bold {
+  font-weight: bold; }
+
+.font-italic {
+  font-style: italic; }
+
+/* pre换行*/
+.pre-warp {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+/** 隐藏内容 seo优化 **/
+.hidden-val {
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px; }
+
+/*
+ * 浮动
+ */
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.clearFix {
+  clear: both; }
+
+/* 清除浮动需要在 浮动元素完成的下一个不浮动元素上加*/
+/* 去除浮动另外一种方法 推荐()*/
+.fix {
+  *zoom: 1; }
+
+.fix:after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/*
+ *  position
+ */
+.rel {
+  position: relative; }
+
+.abs {
+  position: absolute; }
+
+/* cursor */
+.poi {
+  cursor: pointer; }
+
+.def {
+  cursor: default; }
+
+.tran-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.tran-ve-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%); }
+
+.tr-hoz-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%); }
+
+/*# sourceMappingURL=no_reset.css.map */
