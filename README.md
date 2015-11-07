@@ -45,6 +45,8 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
 
 ### 构建
 
+安装依赖
 <pre><code>cd xxx && npm install</code></pre>
 
+构建
 <pre><code>grunt h5_light</code><pre>
