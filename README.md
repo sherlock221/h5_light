@@ -6,8 +6,7 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
 
 ### 模块介绍   
 1. rest模块 
-@import "reset/reset";
-
+> 大名鼎鼎 normalize.css 
 
 ### 网格布局
 
