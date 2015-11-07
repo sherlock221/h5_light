@@ -9,6 +9,29 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
 
 > 大名鼎鼎 normalize.css 
 
+
+2. layout模块
+
+> 布局模块 支持 flexbox flot inline－block table gird 多种布局 
+
+3. text模块
+
+> 文本模块 支持文本溢出处理 文本换行 文本对齐等
+
+4. property模块
+
+> 属性模块 将常用css属性 类名化 在html中很方便使用类名获得它们
+
+5. value 模块
+
+> 常用值封装  如mt20  = margin-top:20px;  等
+
+6. sass函数
+
+> fun 一些常用sass函数 动画兼容处理 rem方案 等
+
+
+
 ### 网格布局
 
 目前网格布局支持box 和 float两种
