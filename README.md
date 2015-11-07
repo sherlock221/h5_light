@@ -13,7 +13,7 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
 
 目前网格布局支持box 和 float两种
 
-<pre>
+
 
     <div class="row m20" >
         <div class="col-40" style="background: saddlebrown;">
@@ -81,7 +81,7 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
         <div class="col-50" style="background: saddlebrown;">50%</div>
     
     </div>
-</pre>
+
 
 
 
