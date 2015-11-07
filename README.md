@@ -1,4 +1,4 @@
-h5_light 轻量级的css框架 适用于微信 wap页面开发
+h5_light 轻量级的css框架 无ui组件 纯粹的脚手架 适用于微信 webapp页面开发
 ==
 ### 使用方式
 > 导入 dist/h5_light.min.css
