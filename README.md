@@ -8,12 +8,18 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
 
 2. 布局模块 
    
-    @import "flexbox/flex"; flexbox布局
-    @import "table"; table 布局
-    @import "float"; 浮动布局
-    @import "inline-block"; inline-block布局
-    @import "position"; 定位相关属性
-    @import "gird";   百分比网格布局
+    "flexbox/flex"; flexbox布局
+
+     "table"; table 布局
+    
+   "float"; 浮动布局
+    
+    "inline-block"; inline-block布局
+    
+    "position"; 定位相关属性
+    
+     "gird";   百分比网格布局
+    
 
     mobile推荐使用 flexbox ＋ gird
     
