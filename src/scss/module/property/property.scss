@@ -151,6 +151,9 @@ img{
  *  position
  */
 .rel{position:relative;}
+.pos-rel{position: relative;}
+
+
 .abs{position:absolute;}
 /* cursor */
 .poi{cursor:pointer;}
@@ -177,3 +180,9 @@ img{
   @include transform(translateX(-50%));
 }
 
+
+
+//height
+.inh{
+  height: inherit;
+}

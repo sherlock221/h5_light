@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * sherlock221b
+ * 网格布局比例
+ */
+/* === Grid === */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start; }
+  .row > [class*="col-"] {
+    box-sizing: border-box; }
+  .row .col-auto {
+    width: 100%; }
+  .row .col-100 {
+    width: 100%; }
+  .row .col-95 {
+    width: 95%; }
+  .row .col-90 {
+    width: 90%; }
+  .row .col-85 {
+    width: 85%; }
+  .row .col-80 {
+    width: 80%; }
+  .row .col-75 {
+    width: 75%; }
+  .row .col-66 {
+    width: 66.66666666666666%; }
+  .row .col-60 {
+    width: 60%; }
+  .row .col-50 {
+    width: 50%; }
+  .row .col-40 {
+    width: 40%; }
+  .row .col-33 {
+    width: 33.333333333333336%; }
+  .row .col-25 {
+    width: 25%; }
+  .row .col-20 {
+    width: 20%; }
+  .row .col-15 {
+    width: 15%; }
+  .row .col-10 {
+    width: 10%; }
+  .row .col-5 {
+    width: 5%; }
+
+/*# sourceMappingURL=gird.css.map */

@@ -1,0 +1,43 @@
+/**
+ *  针对当前项目类型可选择的css部分
+ *  sherlock221b
+ */
+
+
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing : border-box;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;
+  font-weight: normal;
+}
+
+p{
+  margin: 0;
+}
+
+
+button{
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+
+button,a{
+  outline: none;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+
+
+
+

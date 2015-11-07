@@ -683,6 +683,67 @@ th {
 
 /**
  * sherlock221b
+ * 网格布局比例
+ * flex 和 box 两个子元素切割容器比例 不同
+ * flexbox布局子元素切割容器 推荐采用网格
+ */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start; }
+  .row > [class*="col-"] {
+    box-sizing: border-box; }
+  .row .col-auto {
+    width: 100%; }
+  .row .col-100 {
+    width: 100%; }
+  .row .col-95 {
+    width: 95%; }
+  .row .col-90 {
+    width: 90%; }
+  .row .col-85 {
+    width: 85%; }
+  .row .col-80 {
+    width: 80%; }
+  .row .col-75 {
+    width: 75%; }
+  .row .col-66 {
+    width: 66.66666666666666%; }
+  .row .col-60 {
+    width: 60%; }
+  .row .col-50 {
+    width: 50%; }
+  .row .col-40 {
+    width: 40%; }
+  .row .col-33 {
+    width: 33.333333333333336%; }
+  .row .col-25 {
+    width: 25%; }
+  .row .col-20 {
+    width: 20%; }
+  .row .col-15 {
+    width: 15%; }
+  .row .col-10 {
+    width: 10%; }
+  .row .col-5 {
+    width: 5%; }
+
+/**
+ * sherlock221b
  * float布局方式
  */
 /*
@@ -713,10 +774,6 @@ th {
   white-space: normal;
   word-wrap: break-word;
   word-break: break-all; }
-
-/* 文字居中*/
-.text-center {
-  text-align: center; }
 
 /** 针对webkit 多行文本显示...  **/
 .multi-ellipsis {
@@ -1131,6 +1188,9 @@ img {
 .rel {
   position: relative; }
 
+.pos-rel {
+  position: relative; }
+
 .abs {
   position: absolute; }
 
@@ -1165,4 +1225,34 @@ img {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%); }
 
-/*# sourceMappingURL=module.css.map */
+.inh {
+  height: inherit; }
+
+/**
+ *  针对当前项目类型可选择的css部分
+ *  sherlock221b
+ */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: normal; }
+
+p {
+  margin: 0; }
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0 none; }
+
+button, a {
+  outline: none; }
+  button:focus, a:focus {
+    outline: none; }
+
+/*# sourceMappingURL=h5_light.css.map */

@@ -1,7 +1,15 @@
+@charset "utf-8";
+/**
+ * sherlock221b
+ * 所有css模块
+ */
+
+
+//scss函数
 @import "../fun/fun";
 
 //reset
-//@import "reset/reset";
+@import "reset/reset";
 
 //布局
 @import "layout/layout";
@@ -14,5 +22,9 @@
 
 //属性
 @import "property/property";
+
+//可选部分
+@import "ps/ps";
+
 
 
