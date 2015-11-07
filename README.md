@@ -36,6 +36,8 @@ h5_light 轻量级的css框架 适用于微信 wap页面开发
 
 目前网格布局支持box 和 float两种
 
+![](http://upload-images.jianshu.io/upload_images/326507-53216ec0a696c08d.png)
+
 
 ##### 采用box代码
 
