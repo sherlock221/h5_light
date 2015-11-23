@@ -37,7 +37,6 @@
   }
 
 
-
   //浮动布局
   &.float{
     display: block;
@@ -47,7 +46,6 @@
   &.float>[class*="col-"] {
     float: left;
   }
-
 
 
 
